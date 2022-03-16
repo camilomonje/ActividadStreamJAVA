@@ -57,14 +57,10 @@ public class Main {
         facturaFiltroByCantidadMayor.forEach(System.out::println);
 
         List<Factura> facturaFiltroByCodigo = lista.stream()
-                .filter(elemento -> elemento.getCodigoFactura() == "Cod062")
+                .filter(elemento -> elemento.getCodigoFactura() == "Cod002")
                 .collect(Collectors.toList());
         System.out.println("facturaFiltroByCodigo");
         facturaFiltroByCodigo.forEach(System.out::println);
-
-
-
-
     }
 }
 
